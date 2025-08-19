@@ -1,5 +1,7 @@
-*.bak
-node_modules/
-.env
-.vercel/
-README.md
+.env.local
+.env.*.local
+node_modules
+.git
+__tests__
+*.test.js
+.vercel
