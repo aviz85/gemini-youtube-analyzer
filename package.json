@@ -1,0 +1,33 @@
+{
+  "name": "yt-gemini-analyzer",
+  "version": "1.0.0",
+  "description": "YouTube Video Content Analyzer using Gemini API",
+  "main": "index.html",
+  "scripts": {
+    "start": "node app.js.bak",
+    "cli": "node cli.js.bak",
+    "web": "node server.js.bak",
+    "vercel-dev": "vercel dev",
+    "build": "npm run test && echo 'Build complete - all tests passed'",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "prebuild": "echo 'Running pre-build checks...'",
+    "predeploy": "npm run build",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.14.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "jest": "^30.0.5",
+    "supertest": "^7.1.4"
+  }
+}
